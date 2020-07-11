@@ -1,9 +1,11 @@
+// Import React and ReactDom libraries
 import React from 'react';
 import ReactDOM from 'react-dom';
-import App from './App';
-import './index.css';
 
-ReactDOM.render(
-  <App />,
-  document.getElementById('root')
-);
+// create a react component
+const App = function() {
+    return <div>Hi! there!</div>
+}
+
+// Take a react component and show it on the screen
+ReactDOM.render(<App />, document.querySelector('#root'))
